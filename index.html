@@ -1,6 +1,231 @@
-  <html>
-    <head></head>
-    <body>
-      <h1>Design d'information</h1>
-    </body>
-  </html>
+  <!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV — Aboubakar Seriba</title>
+  <imag src="https://github.com/bilalseriba/designinfo2025/blob/main/images/photo%20modifier%20cv.png?raw=true"alt="photo">
+  <style>:root{
+  --accent:#1f6feb;
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --text:#222;
+  --muted:#666;
+  --sidebar-width:320px;
+  --gap:24px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:40px;
+}
+
+.cv-container{
+  display:flex;
+  gap:var(--gap);
+  max-width:1100px;
+  margin:0 auto;
+  align-items:flex-start;
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:var(--sidebar-width);
+  display:flex;
+  flex-direction:column;
+  gap:var(--gap);
+}
+
+.profile-photo{
+  width:100%;
+  height:160px;
+  background:linear-gradient(135deg,var(--accent),#8ec5ff);
+  border-radius:8px;
+  box-shadow:0 6px 18px rgba(31,111,235,0.12);
+}
+
+.name{
+  margin:0;
+  font-size:20px;
+  letter-spacing:2px;
+}
+.name span{font-weight:700;font-size:24px;display:block;margin-top:4px}
+
+/* MAIN */
+.main{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:var(--gap);
+}
+
+.card{
+  background:var(--card);
+  padding:18px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(18,18,18,0.06);
+}
+
+h2{
+  margin:0 0 10px 0;
+  font-size:16px;
+  color:var(--accent);
+  letter-spacing:1px;
+}
+h3{margin:0;font-size:14px}
+.period{font-size:12px;color:var(--muted);margin-bottom:8px}
+
+/* Lists */
+.card ul{padding-left:18px;margin:0}
+.card p{margin:0 0 8px 0;color:var(--muted);line-height:1.45}
+
+/* Responsive tweaks */
+@media (max-width:900px){
+  .cv-container{flex-direction:column;padding:20px}
+  .sidebar{width:100%}
+}</style>
+</head>
+<body>
+  <div class="cv-container">
+    <aside class="sidebar">
+      <div class="profile-photo"></div>
+      <h1 class="name">Aboubakar<br><span>SERIBA</span></h1>
+
+      <div class="contact card">
+        <h2>Contact</h2>
+        <p>Tél : +33 6 46 76 86 29</p>
+        <p>Email : <a href="mailto:bilalseribaa@gmail.com">bilalseribaa@gmail.com</a></p>
+        <p>Île-de-France</p>
+        <p><a href="https://www.linkedin.com/in/aboubakar-seriba-79822723a" target="_blank">LinkedIn</a></p>
+      </div>
+       <section class="education card">
+        <h2>Formation</h2>
+
+        <div class="school">
+          <h3>Université Paris 8 — Master (Humanités numériques, GSI)</h3>
+          <p class="period">2024 — 2026</p>
+          <p>Stratégie de communication, gestion de projet, marketing, indexation, records management, gestion de contenus.</p>
+        </div>
+
+        <div class="school">
+          <h3>Université Paris 8 — Licence Information & Communication</h3>
+          <p class="period">2021 — 2024</p>
+        </div>
+
+        <div class="school">
+          <h3>Baccalauréat — Collège Saint Viateur (Côte d'Ivoire)</h3>
+          <p class="period">2020 — 2021</p>
+        </div>
+      </section>
+
+      <div class="card">
+        <h2>Compétences</h2>
+        <ul>
+          <li>Veille informationnelle</li>
+          <li>Gestion de bases de données</li>
+          <li>Catalogage</li>
+          <li>Gestion électronique de documents</li>
+          <li>Montage photos / vidéos</li>
+          <li>Gestion de projet</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Outils</h2>
+        <ul>
+          <li>Pack Office (Word, Excel, PPT)</li>
+          <li>Adobe Photoshop</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Langues</h2>
+         <p>Français: Langue maternelle</p>
+        <p>Anglais: Niveau B2</p>
+       
+      </div>
+
+      <div class="card">
+        <h2>Qualités</h2>
+        <ul>
+          <li>Esprit d'équipe</li>
+          <li>Dynamique</li>
+          <li>Créatif</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Centres d'intérêt</h2>
+        <p>Football (équipe de la résidence Les Estudines)<br>Cinéma — films d'action</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="about card">
+        <h2>À propos</h2>
+        <p>Étudiant en deuxième année de Master Humanités numériques — mention Gestion stratégique de l'information. À la recherche d'un stage/alternance pour le Master 2. Très motivé pour développer mes compétences ; je possède des qualités relationnelles et d'adaptation.</p>
+      </section>
+
+      <section class="experience card">
+        <h2>Expériences professionnelles</h2>
+        
+
+        <div class="job">
+          <h3>Chargé de communication — Dix Milliards Humains (Paris 11)</h3>
+          <p class="period">Juin 2024 — Sept. 2024</p>
+          <ul>
+            <li>Création du site des archives</li>
+            <li>Archivage</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Chargé de communication — FrenchPoussin, Arblade Le-Haut</h3>
+          <p class="period">Mai 2023 — Juin 2023</p>
+          <ul>
+            <li>Création de supports et suivi des actions (Instagram, YouTube, Twitter)</li>
+            <li>Rédaction de comptes-rendus</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Serveur — Courtepaille, Guyancourt</h3>
+          <p class="period">Fév. 2023 — Mai 2023</p>
+          <ul>
+            <li>Prise de commandes, service, débarrassage</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Employé polyvalent — RAS Intérim, Disneyland Paris</h3>
+          <p class="period">Juin 2022 — Août 2022</p>
+          <ul>
+            <li>Assistance clients, tenue de caisse</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Assistant archivage — SITTI SARL, Abidjan</h3>
+          <p class="period">Juin 2025 — Août 2025</p>
+          <ul>
+            <li>Gestion des réseaux sociaux, création de spots publicitaires, campagnes d'emailing</li>
+          </ul>
+        </div>
+      </section>
+
+      
+
+      <section class="projects card">
+        <h2>Projets & Stage</h2>
+        <p>Création et publication de spots publicitaires, campagnes d'emailing, site d'archives (ex : <a href="http://archives10milliards.nursit.com" target="_blank">archives10milliards</a>).</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
