@@ -9,4 +9,4 @@ Cet espace est dédié au cours de **Design d'Information.**
 Année uniersitaire: 2025-2026.
 
 l'addresse url de l'image est : 
-(https://github.com/bilalseriba/designinfo2025/blob/main/images/zage.png?raw=true)
+https://github.com/bilalseriba/designinfo2025/blob/main/images/zage.png?raw=true
